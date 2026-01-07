@@ -1,0 +1,54 @@
+# ----------------------------------------
+# Python / Virtualenv
+# ----------------------------------------
+.venv/
+venv/
+env/
+ENV/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.sqlite3
+
+# Build / cache
+.build/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------------------------
+# Project specific
+# ----------------------------------------
+
+# Client state & config (local only)
+~/.local/share/
+~/.config/
+~/.cache/
+
+# State & index files created by app
+client/state.json
+client/*.json
+server/assets_index.json
+
+# Uploaded files (we don't commit real assets)
+server/uploads/
+uploads/
+*.tmp
+
+# MinIO artifacts (never commit)
+minio/
+data/
+*.ldb
+*.log
+
+# Logs
+*.log
+logs/
